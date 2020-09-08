@@ -11,8 +11,8 @@ In this challenge, you will write an API that can be used to manage _Cars_ store
 
 - Using `knex migrations`, design and write a schema for the `cars` table using the specifications below.
 - Configure `knex` to connect to a `/data/car-dealer.db3` database using the `sqlite3` npm module.
-- Write endpoints to support `CREATE` and `READ` operations on the `cars` resource.
-- Use a rest client like _Insomnia_ or _Postman_ to test your API.
+- Write endpoints to support `CREATE` tions on the `cars` resource.
+- Use a rest client like _Insomnia_ or _Postman_ to teand `READ` operast your API.
 
 ## Specifications
 
