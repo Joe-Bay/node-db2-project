@@ -27,6 +27,7 @@ router.get('/:id', (req, res) => {
   });
 
 router.post('/', (req, res) => {
+    req.body.vin && req.body.make && req.body.model && req.body.mileage ? 
     db('cars').insert(req.body, "id")
     .then(ids => {
         res.status(201).json({data: ids})
@@ -34,6 +35,8 @@ router.post('/', (req, res) => {
     .catch(err => {
         res.status(500).json({message: "failed to store the data"})
     })
+    : res.status(400).json({message: "please fill in the desired fields of Vin, make, model, and milage"})
+
 })
 
 router.put('/:id', (req, res) => {
